@@ -9,4 +9,4 @@ $ yarn install
 $ yarn start
 ```
 
-Open http://localhost:1234/ in your browser!
+Open http://localhost:1234/artists/Led%20Zeppelin in your browser!
