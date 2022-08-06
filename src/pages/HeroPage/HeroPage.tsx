@@ -8,8 +8,8 @@ export const HeroPage: React.FC = () => {
   let match = useMatch("/artists/:artistName");
   const { artist, error } = useArtist(match?.params.artistName!);
 
-  if (error) return <p>"An error has occurred."</p>;
-  if (!artist) return <p>"Loading..."</p>;
+  if (error) return <p>{error}</p>;
+  if (!artist) return <p>Loading...</p>;
 
   const title = `${
     artist.name

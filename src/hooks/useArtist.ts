@@ -12,6 +12,7 @@ export type ArtistData = {
   mbid: string;
   tracker_count: number;
   upcoming_event_count: number;
+  error?: string;
 };
 
 export const useArtist = (artistName: string) => {
@@ -19,6 +20,12 @@ export const useArtist = (artistName: string) => {
     `https://rest.bandsintown.com/artists/${artistName}?app_id=test`,
     fetcher
   );
+
+  if (!data) {
+    return { error: "No artist information available" };
+  } else if (data.error) {
+    return { error: data.error };
+  }
 
   return { artist: data, error };
 };

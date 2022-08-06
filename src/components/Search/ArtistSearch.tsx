@@ -58,7 +58,7 @@ export const ArtistSearch: React.FC<SearchProps> = ({ placeholder }) => {
 
 const ArtistListItem: React.FC<{ artist: ArtistResult }> = ({ artist }) => {
   return (
-    <Link to={`/artists/${artist.name}`}>
+    <Link to={`/artists/${encodeURIComponent(artist.name)}`}>
       <ArtistListItemContainer>
         <img src={artist.imageSrc} />
         <Spacer size={10} />
