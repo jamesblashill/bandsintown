@@ -1,12 +1,16 @@
 import * as React from "react";
 import styled from "styled-components";
+import { Spacer } from "../components/layout";
+import { ArtistSearch } from "../components/Search/ArtistSearch";
 
-import LogoSVG from "./logo.svg";
+import Logo from "./logo.svg";
 
 export const Page: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <Container>
     <Header>
-      <img src={`data:image/svg+xml,${LogoSVG}`} />
+      <Logo />
+      <Spacer size={20} />
+      <ArtistSearch />
     </Header>
     <Children>{children}</Children>
   </Container>
@@ -18,6 +22,8 @@ const Header = styled.header`
   padding: 20px 10px;
   border-bottom: 1px solid var(--header-border-color);
   background-color: var(--header-background);
+  display: flex;
+  flex-direction: column;
 `;
 
 const Children = styled.section`

@@ -22,4 +22,8 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 26px;
         font-weight: bold;        
     }
+
+    a { 
+        text-decoration: none;
+    }
 `;
