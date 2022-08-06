@@ -7,6 +7,9 @@ import { H1, H2 } from "../typography";
 import { VerifiedIcon } from "./VerifiedIcon";
 
 export const Hero: React.FC<{ artist: ArtistData }> = ({ artist }) => {
+  // TODO figure out if this exists in public API data
+  const isVerifedArtist = true;
+
   return (
     <Container>
       <InnerContainer>
@@ -19,7 +22,7 @@ export const Hero: React.FC<{ artist: ArtistData }> = ({ artist }) => {
         <Row>
           <H1>{artist.name}</H1>
           <Spacer size={5} />
-          <VerifiedIcon height="24px" />
+          {isVerifedArtist && <VerifiedIcon height="24px" />}
         </Row>
         <Spacer size={35} />
         <Row>

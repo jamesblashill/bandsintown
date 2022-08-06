@@ -17,7 +17,9 @@ export type ArtistData = {
 
 export const useArtist = (artistName: string) => {
   const { data, error } = useSWR<ArtistData>(
-    `https://rest.bandsintown.com/artists/${artistName}?app_id=test`,
+    `https://rest.bandsintown.com/artists/${encodeURIComponent(
+      artistName
+    )}?app_id=test`,
     fetcher
   );
 
