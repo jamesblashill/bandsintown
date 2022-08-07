@@ -11,7 +11,7 @@ $ yarn start
 
 Open http://localhost:1234/artists/Led%20Zeppelin in your browser!
 
-![image](https://user-images.githubusercontent.com/22937311/183303894-8f919200-ba5f-405c-82a6-e5833574905c.png)
+<img src="[drawing.jpg](https://user-images.githubusercontent.com/22937311/183303894-8f919200-ba5f-405c-82a6-e5833574905c.png)" alt="screenshot" width="400"/>
 
 ## Strategy
 
