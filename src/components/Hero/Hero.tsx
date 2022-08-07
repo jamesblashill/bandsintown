@@ -45,7 +45,7 @@ const ProfilePicture = styled.img.attrs({
   width: 150px;
 `;
 
-const ProfileBackground = styled.img.attrs({ alt: "artist" })`
+const ProfileBackground = styled.img.attrs({ alt: "blurred artist" })`
   position: absolute;
   width: 110%;
   height: 110%;

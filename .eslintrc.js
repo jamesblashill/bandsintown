@@ -2,8 +2,14 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    "jest/globals": true,
   },
-  extends: ["plugin:react/recommended", "airbnb"],
+  extends: [
+    "plugin:react/recommended",
+    "plugin:jest/recommended",
+    "airbnb",
+    "prettier",
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
@@ -12,6 +18,6 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "jest", "@typescript-eslint"],
   rules: {},
 };

@@ -1,9 +1,8 @@
 import useSWR from "swr";
-
-const fetcher = (url) => fetch(url).then((res) => res.json());
+import { fetcher } from "./fetcher";
 
 export type ArtistData = {
-  id: number;
+  id: string;
   name: string;
   url: string;
   image_url: string;
