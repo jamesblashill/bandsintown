@@ -11,6 +11,8 @@ $ yarn start
 
 Open http://localhost:1234/artists/Led%20Zeppelin in your browser!
 
+![image](https://user-images.githubusercontent.com/22937311/183303894-8f919200-ba5f-405c-82a6-e5833574905c.png)
+
 ## Strategy
 
 This codebase was constructed piece by piece, rather than starting from a typical `create-react-app` setup. The intent here was only add features as they become necessary to gain a better understanding all aspects of the build/configuration.
