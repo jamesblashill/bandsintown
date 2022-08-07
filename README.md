@@ -38,7 +38,7 @@ As this was a self time-boxed activity, here's what was not done:
 4. Serverside rendering was not done
 5. Prefetching images when loading artists was skipped (depending on your network connection this will lead to a "janky" experience as images flicker in)
 6. Visual & E2E tests were skipped
-7. tsconfig & eslint was skipped
+7. tsconfig & eslint optimization was skipped
 8. PR checks were skipped
 9. No attempt to deploy in a production environment was made
 10. Accessibility was skipped
